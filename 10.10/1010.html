@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>弹弹弹</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="box">弹弹弹</div>
+	<div class= "bg"></div>
+	<div class="content">
+		<h2>弹窗头部 	<span class="btn">x</span></h2>
+		<div class="text">
+			<p>这是一个弹窗效果</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ratione ullam nesciunt, aut ut, saepe est perferendis voluptate, deserunt nulla modi debitis rerum odit in. Molestiae cumque error labore consequatur.</p>
+		</div>
+		<p class="footer">弹窗底部</p>
+	</div>
+	
+	
+</body>
+
+<script>
+	
+	var box = document.querySelector(".box");
+	var content = document.querySelector(".content");
+	var btn = document.querySelector(".btn");
+	var bg = document.querySelector(".bg");
+
+	mouse(box);
+	color(btn);
+	click(box,1,"block",1);
+	click(btn,0,"none",0);
+	click(bg,0,"none",0);
+
+	function mouse(obj){
+		obj.onmouseover = function(){
+			obj.style.background = "black";
+		}
+		obj.onmouseout = function(){
+			obj.style.background = 'rgb(252,128,82)';
+		}
+	}
+	
+	function color(obj){
+		obj.onmouseover = function(){
+			obj.style.color = "black";
+		}
+		obj.onmouseout = function(){
+			obj.style.color = 'white';
+		}
+	}
+
+
+	function click(obj,value,change,value2){
+		obj.onclick = function(ev){
+			var e = ev || window.event;
+			content.style.opacity = value;
+			bg.style.display = change;
+			
+			content.style.transition = value2+"s";
+			
+			
+		}
+	}
+	
+	// btn.onclick = function(ev){
+	// 	var e = ev || window.event;
+	// 	content.style.opacity = 0;
+	// 	bg.style.display = "none";
+	// 	// e.preventDefault();
+	// 	// return false;
+	// }
+	// bg.onclick = function(ev){
+	// 	var e = ev || window.event;
+	// 	content.style.opacity = 0;
+	// 	bg.style.display = "none";
+	// }
+</script>
+</html>
