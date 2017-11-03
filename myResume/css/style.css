@@ -1,0 +1,22 @@
+#main-header img{
+	width: 100%;
+	height: 100%;
+}
+.bg-black{
+	background: #000;
+
+}
+.sbq-flex{
+	width:30%;
+}
+#main-header .sbq-flex .fa{
+	font-size:2em;
+}
+#main-header .sbq-flex:hover{
+	opacity: 0.8;
+}
+@media(min-width: 1200px){
+	.sbq-flex{
+		padding:48px !important;
+	}
+}
