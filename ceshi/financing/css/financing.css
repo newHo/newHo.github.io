@@ -15,18 +15,22 @@ body {
 }
 
 .bg_wrapper {
-  max-width: 900px;
   width: 100%;
   height: 100%;
-  background-image: url("./../image/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  position: relative;
+}
+
+.bg_wrapper .img_wrapper {
+  width: 100%;
+  height: 100%;
 }
 
 .bg_wrapper .title_wrapper {
-  padding-top: 0.25rem;
-  padding-left: 0.30rem;
   overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  top: 0.25rem;
+  left: 0.30rem;
 }
 
 .bg_wrapper .title_wrapper .photo_wrapper {
