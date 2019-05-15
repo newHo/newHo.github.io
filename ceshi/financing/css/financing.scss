@@ -3,17 +3,14 @@ body {
     height: 100%;
     font-size: 100px;
 }
-
 @font-face {
     font-family: SourceHanSansCN-bold;
     src: url("../font/SourceHanSansSC-Bold.otf");
 }
-
 @font-face {
     font-family: SourceHanSansCN-Regular;
     src: url("../font/SourceHanSansSC-Regular.otf");
 }
-
 .bg_wrapper {
     max-width: 900px;
     width: 100%;
