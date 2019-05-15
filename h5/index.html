@@ -5,14 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        .er{
+            width: 100%;
+        }
+        .btn{
+            width: 100%;
+            height: 30px;
+            border: 2px solid red;
+        }
+        .head{
+            width: 100px;
+        }
+    </style>
 </head>
 <body>
-    <div class="btn">点击弹窗</div>
+    <!-- <div class="btn">点击弹窗</div> -->
+    <div class="box">
+        <img class="er" src="./my.jpg" alt="haibao">
+        <div class="btn">点击保存图片</div>
+        <img class="head" src="./head.png" alt="头">
+    </div>
 </body>
 <script>
     var btn = document.querySelector('.btn');
-    btn.onclick = function() {
-        alert('弹窗提示');
-    }
+    // btn.onclick = function() {
+    //     alert('弹窗提示');
+    // }
 </script>
 </html>
